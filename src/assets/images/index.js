@@ -21,6 +21,7 @@ import thumbnailBackground from './thumbnail-background.svg'
 import thumbnailShoe1 from './thumbnail-shoe1.svg'
 import thumbnailShoe2 from './thumbnail-shoe2.svg'
 import thumbnailShoe3 from './thumbnail-shoe3.svg'
+import board from './board.png'
 
 export {
     bigShoe1,
@@ -40,6 +41,7 @@ export {
     shoe6,
     shoe7,
     shoe8,
+    board,
 
     thumbnailBackground,
     thumbnailShoe1,

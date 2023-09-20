@@ -1,6 +1,8 @@
 import {headerLogo} from '../assets/images'
 import {hamburger} from '../assets/icons'
 import {navLinks} from '../constants'
+import Marqueey from './Marquee';
+
 
 
 
@@ -18,6 +20,7 @@ const Nav = () => {
 
   return (
    <header className='absolute z-10 w-full py-8 padding-x'>
+   
     <nav className='flex items-center justify-between max-container'>
         <a href="/">
             <img src={headerLogo} alt="logo" width={130}  height={29}/>
@@ -26,7 +29,7 @@ const Nav = () => {
             {navLinks.map((item) => (
                 <li key={item.label}>
                     <a href={item.href}
-                    className='p-2 text-lg leading-normal text-red-400 rounded-md font-montserrat border-1 border-b-gray-400 hover:text-black'> {item.label}</a>
+                    className='p-2 text-lg font-bold leading-normal text-red-400 rounded-md font-montserrat border-1 border-b-gray-400 hover:text-black hover:animate-ping '> {item.label}</a>
                 </li>
             ))}
         </ul>
@@ -38,7 +41,9 @@ const Nav = () => {
           </li>
         ))}
       </ul></div>
+     
     </nav>
+<Marqueey></Marqueey>
    </header>
   )
 }
